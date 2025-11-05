@@ -20,9 +20,6 @@ const Footer = () => {
               <a href="https://www.instagram.com/varunengg3?igsh=MWwxY3VsNGxjem81Ng==" className="text-muted-foreground hover:text-primary">
                 <Instagram className="h-5 w-5" />
               </a>
-              <a href="https://linkedin.com" className="text-muted-foreground hover:text-primary">
-                <Linkedin className="h-5 w-5" />
-              </a>
             </div>
           </div>
 

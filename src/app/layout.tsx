@@ -69,7 +69,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         />
 
         {/* Google Analytics (replace G-XXXXXXXXXX with your property ID) */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-GTM-PTJKBDMR"></script>
         <script
           dangerouslySetInnerHTML={{
             __html: `
