@@ -24,7 +24,7 @@ const Hero = () => {
             <span className="text-primary">Handling Solutions</span>
           </h1>
           <p className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl animate-fade-in" style={{ animationDelay: "0.1s" }}>
-            Gujarat's leading manufacturer of premium material handling equipment. Specializing in hydraulic pallet trucks, stackers, and customized solutions for your warehouse needs.
+            Gujarat's leading supplier of premium material handling equipment. Specializing in hydraulic pallet trucks, stackers, and customized solutions for your warehouse needs.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 animate-fade-in" style={{ animationDelay: "0.2s" }}>
             <Button size="lg" className="text-base px-8 py-6 group" asChild>

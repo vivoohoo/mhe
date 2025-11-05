@@ -11,7 +11,7 @@ const Footer = () => {
           <div>
             <h3 className="font-bold text-lg mb-4">Varun Engineering</h3>
             <p className="text-muted-foreground mb-4">
-              Leading manufacturer of material handling equipment in Gujarat. Specializing in hydraulic pallet trucks, stackers, and custom solutions since 2008.
+              Leading supplier of material handling equipment in Gujarat. Specializing in hydraulic pallet trucks, stackers, and custom solutions since 2008.
             </p>
             <div className="flex gap-4">
               <a href="https://www.facebook.com/share/1A21nd3ABf/" className="text-muted-foreground hover:text-primary">
@@ -73,7 +73,7 @@ const Footer = () => {
         <div className="border-t border-border pt-8 text-center text-muted-foreground">
           <p>© {currentYear} Varun Engineering. All rights reserved.</p>
           <p className="mt-2 text-sm">
-            Material Handling Equipment Manufacturer in Gujarat | Hydraulic Pallet Trucks | Industrial Stackers
+            Material Handling Equipment Supplier in Gujarat | Hydraulic Pallet Trucks | Industrial Stackers
           </p>
         </div>
       </div>
