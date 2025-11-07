@@ -47,39 +47,26 @@ export default function RootLayout({
         gtag('config', 'G-XZLDJ843TH');
       `}
     </script>
-        {/* End Google Tag Manager */}
+    {/* End Google Tag Manager */}
 
-        <link rel="icon" href="/favicon.ico" />
-        <meta name="google-site-verification" content="your-verification-code" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="google-site-verification" content="your-verification-code" />
 
-        {/* Explicit canonical (in addition to metadata.alternates) */}
-        <link rel="canonical" href="https://www.varunengineering.co.in" />
+    {/* Explicit canonical (in addition to metadata.alternates) */}
+    <link rel="canonical" href="https://www.varunengineering.co.in" />
 
-        {/* Explicit viewport for mobile usability */}
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {/* Explicit viewport for mobile usability */}
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        {/* Explicit SEO meta tags to satisfy scanners */}
-        <meta
-          name="description"
-          content="Varun Engineering suppliers of hydraulic pallet trucks (3 ton, 685x1220 & 550x1150), manual & electric stackers, lift tables, and customized industrial material handling solutions. Trusted for quality, durability, and customer support."
-        />
-        <meta
-          name="keywords"
-          content="material handling equipment, pallet truck supplier, hydraulic pallet jack, industrial lifting solutions, warehouse equipment supplier, 3 ton pallet truck 685x1220, 550x1150, Varun Engineering"
-        />
-
-        {/* Google Analytics (replace G-XXXXXXXXXX with your property ID) */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-XZLDJ843TH"></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-XZLDJ843TH');
-            `,
-          }}
-        />
+    {/* Explicit SEO meta tags to satisfy scanners */}
+    <meta
+      name="description"
+      content="Varun Engineering suppliers of hydraulic pallet trucks (3 ton, 685x1220 & 550x1150), manual & electric stackers, lift tables, and customized industrial material handling solutions. Trusted for quality, durability, and customer support."
+    />
+    <meta
+      name="keywords"
+      content="material handling equipment, pallet truck supplier, hydraulic pallet jack, industrial lifting solutions, warehouse equipment supplier, 3 ton pallet truck 685x1220, 550x1150, Varun Engineering"
+    />
 
         {/* Local Business Schema (JSON-LD) */}
         <script
