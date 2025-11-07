@@ -69,14 +69,14 @@ export default function RootLayout({
         />
 
         {/* Google Analytics (replace G-XXXXXXXXXX with your property ID) */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-GTM-PTJKBDMR"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-XZLDJ843TH"></script>
         <script
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'G-XXXXXXXXXX');
+              gtag('config', 'G-XZLDJ843TH');
             `,
           }}
         />
