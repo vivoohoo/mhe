@@ -37,16 +37,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* Google Tag Manager */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-PTJKBDMR');`,
-          }}
-        />
+    {/* Google tag (gtag.js) */}
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XZLDJ843TH"></script>
+    <script>
+      {`
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XZLDJ843TH');
+      `}
+    </script>
         {/* End Google Tag Manager */}
 
         <link rel="icon" href="/favicon.ico" />
@@ -111,7 +111,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         {/* Google Tag Manager (noscript) */}
         <noscript>
           <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-PTJKBDMR"
+            src="https://www.googletagmanager.com/ns.html?id=G-XZLDJ843TH"
             height="0"
             width="0"
             style={{ display: "none", visibility: "hidden" }}
