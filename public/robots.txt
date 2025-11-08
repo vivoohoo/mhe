@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://www.varunengineering.com/sitemap.xml
+Sitemap: https://www.varunengineering.co.in/sitemap.xml

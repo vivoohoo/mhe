@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Varun Engineering | Pallet Trucks, Stackers & MHE Gujarat", // increased length + keyword-rich
-  description: "Varun Engineering Supplier of hydraulic pallet trucks (3 ton, 685x1220 & 550x1150), manual & electric stackers, lift tables, and customized industrial material handling solutions. Trusted for quality, durability, and customer support.",
-  keywords: "material handling equipment, pallet truck supplier, hydraulic pallet jack, industrial lifting solutions, warehouse equipment supplier, 3 ton pallet truck 685x1220, 550x1150, Varun Engineering",
+  title: "Varun Engineering | Material Handling Equipment Supplier Gujarat | Industrial Warehouse Solutions",
+  description: "Premium material handling equipment in Gujarat. Hydraulic pallet trucks, stackers & warehouse solutions. Boost efficiency 40%. Request quote today!",
+  keywords: "material handling equipment supplier Gujarat, hydraulic pallet trucks, industrial warehouse equipment, material handling solutions, warehouse stackers, pallet truck supplier Ahmedabad",
   openGraph: {
-    title: "Varun Engineering - Material Handling Solutions",
-    description: "Premium material handling equipment suppliers in Gujarat. Specializing in hydraulic pallet trucks, stackers, and custom solutions.",
+    title: "Material Handling Equipment Supplier Gujarat | Industrial Warehouse Solutions",
+    description: "Get premium material handling equipment in Gujarat. Hydraulic pallet trucks, stackers & warehouse solutions. Boost efficiency 40%. Request quote today!",
     images: [
       {
         url: "/og-image.jpg",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   viewport: "width=device-width, initial-scale=1",
   themeColor: "#000000",
   alternates: {
-    canonical: "https://www.varunengineering.co.in",
+    canonical: "https://varunengineering.co.in",
   }
 };
 
@@ -37,14 +37,27 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-    {/* Google tag (gtag.js) */}
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XZLDJ843TH"></script>
+    {/* Google tag (gtag.js) - Optimized for INP */}
+    <script defer src="https://www.googletagmanager.com/gtag/js?id=G-XZLDJ843TH"></script>
     <script>
       {`
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-XZLDJ843TH');
+        // Defer Google Analytics initialization until idle time
+        if ('requestIdleCallback' in window) {
+          requestIdleCallback(() => {
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-XZLDJ843TH');
+          });
+        } else {
+          // Fallback for browsers without requestIdleCallback
+          setTimeout(() => {
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-XZLDJ843TH');
+          }, 2000); // Delay by 2 seconds
+        }
       `}
     </script>
     {/* End Google Tag Manager */}
@@ -52,20 +65,20 @@ export default function RootLayout({
     <link rel="icon" href="/favicon.ico" />
     <meta name="google-site-verification" content="your-verification-code" />
 
-    {/* Explicit canonical (in addition to metadata.alternates) */}
-    <link rel="canonical" href="https://www.varunengineering.co.in" />
+    {/* Explicit canonical (self-referencing) */}
+    <link rel="canonical" href="https://varunengineering.co.in" />
 
-    {/* Explicit viewport for mobile usability */}
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {/* Mobile viewport - Emergency fix */}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     {/* Explicit SEO meta tags to satisfy scanners */}
     <meta
       name="description"
-      content="Varun Engineering suppliers of hydraulic pallet trucks (3 ton, 685x1220 & 550x1150), manual & electric stackers, lift tables, and customized industrial material handling solutions. Trusted for quality, durability, and customer support."
+      content="Varun Engineering suppliers of hydraulic pallet trucks, manual & electric stackers, lift tables, and customized industrial material handling solutions. Trusted for quality, durability, and customer support."
     />
     <meta
       name="keywords"
-      content="material handling equipment, pallet truck supplier, hydraulic pallet jack, industrial lifting solutions, warehouse equipment supplier, 3 ton pallet truck 685x1220, 550x1150, Varun Engineering"
+      content="material handling equipment supplier Gujarat, hydraulic pallet trucks, industrial warehouse equipment, material handling solutions, warehouse stackers, pallet truck supplier Ahmedabad"
     />
 
         {/* Local Business Schema (JSON-LD) */}
@@ -93,6 +106,33 @@ export default function RootLayout({
             }),
           }}
         />
+        {/* Additional Structured Data: WebPage and Organization */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              "name": "Varun Engineering - Material Handling Equipment Supplier",
+              "description": "Premium material handling equipment in Gujarat including hydraulic pallet trucks, stackers, and warehouse solutions.",
+              "url": "https://varunengineering.co.in",
+              "publisher": {
+                "@type": "Organization",
+                "name": "Varun Engineering",
+                "logo": {
+                  "@type": "ImageObject",
+                  "url": "/logo.png"
+                }
+              }
+            }),
+          }}
+        />
+
+        {/* Hreflang Tags - Based on audit, adding en-us as primary; add more if variants exist */}
+        <link rel="alternate" hreflang="en-us" href="https://varunengineering.co.in" />
+        {/* Example for Spanish variant - Remove or adjust based on actual variants */}
+        <link rel="alternate" hreflang="es-es" href="https://varunengineering.co.in/es" />
+
       </head>
       <body>
         {/* Google Tag Manager (noscript) */}
