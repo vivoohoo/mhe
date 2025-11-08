@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://varunengineering.co.in"),
   title: "Varun Engineering | Material Handling Equipment Supplier Gujarat | Industrial Warehouse Solutions",
   description: "Premium material handling equipment in Gujarat. Hydraulic pallet trucks, stackers & warehouse solutions. Boost efficiency 40%. Request quote today!",
   keywords: "material handling equipment supplier Gujarat, hydraulic pallet trucks, industrial warehouse equipment, material handling solutions, warehouse stackers, pallet truck supplier Ahmedabad",
@@ -22,11 +23,15 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
-  viewport: "width=device-width, initial-scale=1",
-  themeColor: "#000000",
   alternates: {
     canonical: "https://varunengineering.co.in",
   }
+};
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#000000",
 };
 
 export default function RootLayout({
@@ -129,9 +134,9 @@ export default function RootLayout({
         />
 
         {/* Hreflang Tags - Based on audit, adding en-us as primary; add more if variants exist */}
-        <link rel="alternate" hreflang="en-us" href="https://varunengineering.co.in" />
+        <link rel="alternate" hrefLang="en-us" href="https://varunengineering.co.in" />
         {/* Example for Spanish variant - Remove or adjust based on actual variants */}
-        <link rel="alternate" hreflang="es-es" href="https://varunengineering.co.in/es" />
+        <link rel="alternate" hrefLang="es-es" href="https://varunengineering.co.in/es" />
 
       </head>
       <body>
